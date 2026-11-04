@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy Red Wines online from Vinterra Valley Winery.">
+    <title>Red Wines | Vinterra Valley Winery</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/products.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/static.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg" alt="Vinterra Valley Winery logo" width="260" height="64">
+            </a>
+            <p class="slogan">The best drinks in the town</p>
+        </div>
+        <a href="cart.html" class="cart-link" aria-label="Shopping cart, 0 items">
+            <img src="images/cart.svg" alt="" width="24" height="24">
+            Cart <span class="cart-count">0</span>
+        </a>
+    </div>
+</header>
+
+<nav class="main-nav" aria-label="Main navigation">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">&#9776; Menu</button>
+    <ul id="nav-list">
+                    <li>
+                <a href="index.html">
+                    Home                </a>
+            </li>
+                    <li>
+                <a href="red-wines.html" class="active" aria-current="page">
+                    Red Wines                </a>
+            </li>
+                    <li>
+                <a href="white-wines.html">
+                    White Wines                </a>
+            </li>
+                    <li>
+                <a href="accessories.html">
+                    Accessories                </a>
+            </li>
+                    <li>
+                <a href="blog.html">
+                    Blog                </a>
+            </li>
+                    <li>
+                <a href="contact.html">
+                    Contact Us                </a>
+            </li>
+                    <li>
+                <a href="sitemap.html">
+                    Site Map                </a>
+            </li>
+                    <li>
+                <a href="cart.html">
+                    Cart                </a>
+            </li>
+            </ul>
+</nav>
+
+<div class="layout">
+    <main id="main" class="main-content">
+        <h1>Red Wines</h1>
+    <p>Our red wines are grown on the warm northern slopes of the valley, where long afternoons ripen the fruit fully. Each wine is fermented in small open vats and matured in French and American oak for twelve to twenty months.</p>
+    <p>From the bold Estate Shiraz to the silky Pinot Noir, there is a red here for every meal and every budget. Serve them at 16 to 18 degrees and open full-bodied wines an hour before dinner.</p>
+    <p>Every red is made only from estate-grown fruit and is suitable for vegans. Order a mixed dozen of any reds and we will include a free tasting card with food matches and cellaring advice for each wine. Older back vintages are occasionally released to members, so keep an eye on our blog for limited cellar releases.</p>
+
+<div class="product-grid">
+            <article class="product-card">
+            <img src="images/red-wine.svg" alt="Estate Shiraz 2021" width="90" height="180">
+            <h2>Estate Shiraz 2021</h2>
+            <p>Full-bodied with plum, blackberry and cracked pepper. Our signature red.</p>
+            <p class="price">$32.00</p>
+            <form action="cart.html" method="post" class="add-form">
+                                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="id" value="shiraz-2021">
+                <label for="qty-shiraz-2021">Qty</label>
+                <input type="number" id="qty-shiraz-2021" name="qty" value="1" min="1" max="48">
+                <button type="submit" class="btn">Add to cart</button>
+            </form>
+        </article>
+            <article class="product-card">
+            <img src="images/red-wine.svg" alt="Reserve Cabernet Sauvignon 2020" width="90" height="180">
+            <h2>Reserve Cabernet Sauvignon 2020</h2>
+            <p>Blackcurrant, cedar and firm tannins. Cellar for up to ten years.</p>
+            <p class="price">$38.00</p>
+            <form action="cart.html" method="post" class="add-form">
+                                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="id" value="cabsav-2020">
+                <label for="qty-cabsav-2020">Qty</label>
+                <input type="number" id="qty-cabsav-2020" name="qty" value="1" min="1" max="48">
+                <button type="submit" class="btn">Add to cart</button>
+            </form>
+        </article>
+            <article class="product-card">
+            <img src="images/red-wine.svg" alt="Pinot Noir 2022" width="90" height="180">
+            <h2>Pinot Noir 2022</h2>
+            <p>Light and silky with cherry and forest-floor notes.</p>
+            <p class="price">$34.00</p>
+            <form action="cart.html" method="post" class="add-form">
+                                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="id" value="pinot-noir-2022">
+                <label for="qty-pinot-noir-2022">Qty</label>
+                <input type="number" id="qty-pinot-noir-2022" name="qty" value="1" min="1" max="48">
+                <button type="submit" class="btn">Add to cart</button>
+            </form>
+        </article>
+            <article class="product-card">
+            <img src="images/red-wine.svg" alt="Merlot 2021" width="90" height="180">
+            <h2>Merlot 2021</h2>
+            <p>Soft, approachable and generous with ripe red fruit.</p>
+            <p class="price">$28.00</p>
+            <form action="cart.html" method="post" class="add-form">
+                                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="id" value="merlot-2021">
+                <label for="qty-merlot-2021">Qty</label>
+                <input type="number" id="qty-merlot-2021" name="qty" value="1" min="1" max="48">
+                <button type="submit" class="btn">Add to cart</button>
+            </form>
+        </article>
+    </div>
+    </main>
+
+    <aside class="sidebar" aria-label="Sidebar">
+        <section class="side-box">
+            <h2>Cellar Door</h2>
+            <p class="door-status open">
+                Open now            </p>
+            <p class="small">Wed&ndash;Sun, 10am&ndash;5pm<br>Sydney time: <span class="door-time"></span></p>
+        </section>
+
+        <section class="side-box">
+            <h2>Wine of the Day</h2>
+            <img src="images/red-wine.svg" alt="" width="80" height="160" class="side-img">
+            <p><strong>Merlot 2021</strong><br>$28.00</p>
+            <form action="cart.html" method="post">
+                                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="id" value="merlot-2021">
+                <input type="hidden" name="qty" value="1">
+                <button type="submit" class="btn btn-small">Add to cart</button>
+            </form>
+        </section>
+
+        <section class="side-box">
+            <h2>Free Shipping</h2>
+            <p class="small">On all orders over $150.00. Otherwise a flat $12.00 Australia-wide.</p>
+        </section>
+    </aside>
+</div>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Vinterra Valley Winery &middot; The best drinks in the town</p>
+    <p class="small">Liquor licence: LIQP-0000-SAMPLE (student project). It is against the law to sell or supply alcohol to, or to obtain alcohol on behalf of, a person under the age of 18 years.</p>
+    <p class="small">Please drink responsibly. All images are original artwork created for this site and free to use.</p>
+    <p class="small preview-note">Online preview of a student project. The cart and forms run in your browser only; no orders or details are sent or stored.</p>
+    <p class="small"><a href="sitemap.html">Site Map</a> &middot; <a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vinterra Valley Winery - award-winning red and white wines and wine accessories, delivered Australia-wide.">
+    <title>Home | Vinterra Valley Winery</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/products.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/static.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg" alt="Vinterra Valley Winery logo" width="260" height="64">
+            </a>
+            <p class="slogan">The best drinks in the town</p>
+        </div>
+        <a href="cart.html" class="cart-link" aria-label="Shopping cart, 0 items">
+            <img src="images/cart.svg" alt="" width="24" height="24">
+            Cart <span class="cart-count">0</span>
+        </a>
+    </div>
+</header>
+
+<nav class="main-nav" aria-label="Main navigation">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">&#9776; Menu</button>
+    <ul id="nav-list">
+                    <li>
+                <a href="index.html" class="active" aria-current="page">
+                    Home                </a>
+            </li>
+                    <li>
+                <a href="red-wines.html">
+                    Red Wines                </a>
+            </li>
+                    <li>
+                <a href="white-wines.html">
+                    White Wines                </a>
+            </li>
+                    <li>
+                <a href="accessories.html">
+                    Accessories                </a>
+            </li>
+                    <li>
+                <a href="blog.html">
+                    Blog                </a>
+            </li>
+                    <li>
+                <a href="contact.html">
+                    Contact Us                </a>
+            </li>
+                    <li>
+                <a href="sitemap.html">
+                    Site Map                </a>
+            </li>
+                    <li>
+                <a href="cart.html">
+                    Cart                </a>
+            </li>
+            </ul>
+</nav>
+
+<div class="layout">
+    <main id="main" class="main-content">
+        <section class="hero">
+    <h1>Welcome to Vinterra Valley Winery</h1>
+    <p class="lead">Family-grown wines, crafted in the valley since 1987 and delivered to your door.</p>
+</section>
+
+<section>
+    <h2>Our Story</h2>
+    <p>Vinterra Valley began as a small family vineyard with just four hectares of Shiraz. Today we tend more than sixty hectares
+        of red and white varieties, yet every bottle is still picked, pressed and blended by the same family that planted the first vines.
+        Our cool nights and warm days give the fruit natural freshness, depth and balance.</p>
+    <p>Through this online store you can buy our complete range of red wines, white wines and hand-picked accessories such as
+        wine coolers, corkscrews and electric openers. Create an account at checkout, choose your delivery address and we will
+        pack your order with care within two business days.</p>
+    <p>Our cellar door is also open for tastings from Wednesday to Sunday, where you can meet the winemakers, sample new
+        releases and enjoy a cheese platter on the lawn overlooking the vines.</p>
+</section>
+
+<section>
+    <h2>Featured This Month</h2>
+    <div class="product-grid">
+                    <article class="product-card">
+                <img src="images/red-wine.svg" alt="Estate Shiraz 2021" width="90" height="180">
+                <h3>Estate Shiraz 2021</h3>
+                <p class="price">$32.00</p>
+                <form action="cart.html" method="post">
+                                        <input type="hidden" name="action" value="add">
+                    <input type="hidden" name="id" value="shiraz-2021">
+                    <input type="hidden" name="qty" value="1">
+                    <button type="submit" class="btn">Add to cart</button>
+                </form>
+            </article>
+                    <article class="product-card">
+                <img src="images/white-wine.svg" alt="Barrel-Aged Chardonnay 2022" width="90" height="180">
+                <h3>Barrel-Aged Chardonnay 2022</h3>
+                <p class="price">$30.00</p>
+                <form action="cart.html" method="post">
+                                        <input type="hidden" name="action" value="add">
+                    <input type="hidden" name="id" value="chardonnay-2022">
+                    <input type="hidden" name="qty" value="1">
+                    <button type="submit" class="btn">Add to cart</button>
+                </form>
+            </article>
+                    <article class="product-card">
+                <img src="images/cooler.svg" alt="Stainless Steel Wine Cooler" width="90" height="180">
+                <h3>Stainless Steel Wine Cooler</h3>
+                <p class="price">$29.00</p>
+                <form action="cart.html" method="post">
+                                        <input type="hidden" name="action" value="add">
+                    <input type="hidden" name="id" value="cooler-sleeve">
+                    <input type="hidden" name="qty" value="1">
+                    <button type="submit" class="btn">Add to cart</button>
+                </form>
+            </article>
+            </div>
+</section>
+
+<section>
+    <h2>Why Shop With Us?</h2>
+    <ul class="ticks">
+        <li>Wines shipped straight from our cellar, so every bottle is stored correctly.</li>
+        <li>Free delivery on orders over $150.00.</li>
+        <li>Secure checkout that protects your personal details.</li>
+    </ul>
+    <p><a class="btn" href="red-wines.html">Shop red wines</a> <a class="btn btn-alt" href="white-wines.html">Shop white wines</a></p>
+</section>
+    </main>
+
+    <aside class="sidebar" aria-label="Sidebar">
+        <section class="side-box">
+            <h2>Cellar Door</h2>
+            <p class="door-status open">
+                Open now            </p>
+            <p class="small">Wed&ndash;Sun, 10am&ndash;5pm<br>Sydney time: <span class="door-time"></span></p>
+        </section>
+
+        <section class="side-box">
+            <h2>Wine of the Day</h2>
+            <img src="images/red-wine.svg" alt="" width="80" height="160" class="side-img">
+            <p><strong>Merlot 2021</strong><br>$28.00</p>
+            <form action="cart.html" method="post">
+                                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="id" value="merlot-2021">
+                <input type="hidden" name="qty" value="1">
+                <button type="submit" class="btn btn-small">Add to cart</button>
+            </form>
+        </section>
+
+        <section class="side-box">
+            <h2>Free Shipping</h2>
+            <p class="small">On all orders over $150.00. Otherwise a flat $12.00 Australia-wide.</p>
+        </section>
+    </aside>
+</div>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Vinterra Valley Winery &middot; The best drinks in the town</p>
+    <p class="small">Liquor licence: LIQP-0000-SAMPLE (student project). It is against the law to sell or supply alcohol to, or to obtain alcohol on behalf of, a person under the age of 18 years.</p>
+    <p class="small">Please drink responsibly. All images are original artwork created for this site and free to use.</p>
+    <p class="small preview-note">Online preview of a student project. The cart and forms run in your browser only; no orders or details are sent or stored.</p>
+    <p class="small"><a href="sitemap.html">Site Map</a> &middot; <a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>

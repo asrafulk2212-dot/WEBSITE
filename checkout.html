@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secure checkout - enter your contact details and shipping address.">
+    <title>Checkout | Vinterra Valley Winery</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/products.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/static.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg" alt="Vinterra Valley Winery logo" width="260" height="64">
+            </a>
+            <p class="slogan">The best drinks in the town</p>
+        </div>
+        <a href="cart.html" class="cart-link" aria-label="Shopping cart, 1 items">
+            <img src="images/cart.svg" alt="" width="24" height="24">
+            Cart <span class="cart-count">1</span>
+        </a>
+    </div>
+</header>
+
+<nav class="main-nav" aria-label="Main navigation">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">&#9776; Menu</button>
+    <ul id="nav-list">
+                    <li>
+                <a href="index.html">
+                    Home                </a>
+            </li>
+                    <li>
+                <a href="red-wines.html">
+                    Red Wines                </a>
+            </li>
+                    <li>
+                <a href="white-wines.html">
+                    White Wines                </a>
+            </li>
+                    <li>
+                <a href="accessories.html">
+                    Accessories                </a>
+            </li>
+                    <li>
+                <a href="blog.html">
+                    Blog                </a>
+            </li>
+                    <li>
+                <a href="contact.html">
+                    Contact Us                </a>
+            </li>
+                    <li>
+                <a href="sitemap.html">
+                    Site Map                </a>
+            </li>
+                    <li>
+                <a href="cart.html" class="active" aria-current="page">
+                    Cart                </a>
+            </li>
+            </ul>
+</nav>
+
+<div class="layout">
+    <main id="main" class="main-content">
+            <h1>Secure Checkout</h1>
+    <p>Please enter your account, contact and shipping details. Fields marked * are required. Your order total is <strong id="order-total">$44.00</strong> including shipping and GST.</p>
+
+        
+    <h2>Order Summary</h2>
+    <ul class="summary">
+                    <li>1 &times; Estate Shiraz 2021 &ndash; $32.00</li>
+                <li>Shipping &ndash; $12.00</li>
+    </ul>
+
+    <form action="checkout.html" method="post" id="checkout-form" class="validate-form" novalidate>
+        
+        <fieldset>
+            <legend>Account details</legend>
+            <div class="field"><label for="username">Username <span class="req" aria-hidden="true">*</span></label><input type="text" id="username" name="username" value="" required maxlength="15" data-pattern="[A-Za-z][A-Za-z0-9_]{4,14}" data-msg="Username must be 5-15 characters, start with a letter and use only letters, numbers or underscores." autocomplete="username" aria-describedby="err-username"><span class="error" id="err-username" aria-live="polite"></span></div>            <div class="field"><label for="email">Email address <span class="req" aria-hidden="true">*</span></label><input type="email" id="email" name="email" value="" required maxlength="60" data-pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}" data-msg="Enter a valid email address, e.g. name@example.com (max 60 characters)." autocomplete="email" aria-describedby="err-email"><span class="error" id="err-email" aria-live="polite"></span></div>            <div class="field"><label for="password">Password <span class="req" aria-hidden="true">*</span></label><input type="password" id="password" name="password" value="" required maxlength="20" data-pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,20}" data-msg="Password must be 8-20 characters with at least one uppercase letter, one lowercase letter, one number and one special character." autocomplete="new-password" aria-describedby="err-password"><span class="error" id="err-password" aria-live="polite"></span></div>            <div class="field"><label for="confirm_password">Confirm password <span class="req" aria-hidden="true">*</span></label><input type="password" id="confirm_password" name="confirm_password" value="" required maxlength="20" data-pattern=".{8,20}" data-msg="Passwords do not match." data-match="password" autocomplete="new-password" aria-describedby="err-confirm_password"><span class="error" id="err-confirm_password" aria-live="polite"></span></div>        </fieldset>
+
+        <fieldset>
+            <legend>Contact information</legend>
+            <div class="field"><label for="first_name">First name <span class="req" aria-hidden="true">*</span></label><input type="text" id="first_name" name="first_name" value="" required maxlength="30" data-pattern="[A-Za-z][A-Za-z&#039; \-]{1,29}" data-msg="First name must be 2-30 letters (hyphens, apostrophes and spaces allowed)." autocomplete="given-name" aria-describedby="err-first_name"><span class="error" id="err-first_name" aria-live="polite"></span></div>            <div class="field"><label for="last_name">Last name <span class="req" aria-hidden="true">*</span></label><input type="text" id="last_name" name="last_name" value="" required maxlength="30" data-pattern="[A-Za-z][A-Za-z&#039; \-]{1,29}" data-msg="Last name must be 2-30 letters (hyphens, apostrophes and spaces allowed)." autocomplete="family-name" aria-describedby="err-last_name"><span class="error" id="err-last_name" aria-live="polite"></span></div>
+            <div class="field">
+                <fieldset class="radio-group" data-required-group="gender" aria-describedby="err-gender">
+                    <legend>Gender <span class="req" aria-hidden="true">*</span></legend>
+                                            <label class="inline"><input type="radio" name="gender" value="Female" > Female</label>
+                                            <label class="inline"><input type="radio" name="gender" value="Male" > Male</label>
+                                            <label class="inline"><input type="radio" name="gender" value="Non-binary" > Non-binary</label>
+                                            <label class="inline"><input type="radio" name="gender" value="Prefer not to say" > Prefer not to say</label>
+                                    </fieldset>
+                <span class="error" id="err-gender" aria-live="polite"></span>
+            </div>
+
+            <div class="field"><label for="phone">Phone number <span class="req" aria-hidden="true">*</span></label><input type="tel" id="phone" name="phone" value="" required maxlength="12" data-pattern="0[2-478]\d{8}" data-msg="Phone must be a 10-digit Australian number starting with 02, 03, 04, 07 or 08 (spaces allowed)." autocomplete="tel" aria-describedby="err-phone"><span class="error" id="err-phone" aria-live="polite"></span></div>        </fieldset>
+
+        <fieldset>
+            <legend>Shipping address</legend>
+            <div class="field"><label for="street">Street address <span class="req" aria-hidden="true">*</span></label><input type="text" id="street" name="street" value="" required maxlength="60" data-pattern="[A-Za-z0-9][A-Za-z0-9 ,.\/&#039;\-]{4,59}" data-msg="Street address must be 5-60 characters (letters, numbers, spaces and , . / &#039; - only)." autocomplete="street-address" aria-describedby="err-street"><span class="error" id="err-street" aria-live="polite"></span></div>            <div class="field"><label for="suburb">Suburb <span class="req" aria-hidden="true">*</span></label><input type="text" id="suburb" name="suburb" value="" required maxlength="40" data-pattern="[A-Za-z][A-Za-z&#039; \-]{1,39}" data-msg="Suburb must be 2-40 letters (hyphens, apostrophes and spaces allowed)." autocomplete="address-level2" aria-describedby="err-suburb"><span class="error" id="err-suburb" aria-live="polite"></span></div>
+            <div class="field">
+                <label for="state">State / Territory <span class="req" aria-hidden="true">*</span></label>
+                <select id="state" name="state" required aria-describedby="err-state" data-msg="Please select your state or territory.">
+                    <option value="">-- Select --</option>
+                                            <option value="ACT" >ACT</option>
+                                            <option value="NSW" >NSW</option>
+                                            <option value="NT" >NT</option>
+                                            <option value="QLD" >QLD</option>
+                                            <option value="SA" >SA</option>
+                                            <option value="TAS" >TAS</option>
+                                            <option value="VIC" >VIC</option>
+                                            <option value="WA" >WA</option>
+                                    </select>
+                <span class="error" id="err-state" aria-live="polite"></span>
+            </div>
+
+            <div class="field"><label for="postcode">Postcode <span class="req" aria-hidden="true">*</span></label><input type="text" id="postcode" name="postcode" value="" required maxlength="4" data-pattern="\d{4}" data-msg="Postcode must be exactly 4 digits and belong to the selected state." autocomplete="postal-code" aria-describedby="err-postcode"><span class="error" id="err-postcode" aria-live="polite"></span></div>        </fieldset>
+
+        <div class="field">
+            <label class="inline"><input type="checkbox" id="age" name="age" value="1" required
+                data-msg="You must confirm you are 18 years or older to buy alcohol." aria-describedby="err-age"
+                > I confirm I am 18 years of age or older.</label>
+            <span class="error" id="err-age" aria-live="polite"></span>
+        </div>
+
+        <script>window.POSTCODE_RANGES = {"NSW":[[1000,2599],[2619,2899],[2921,2999]],"ACT":[[200,299],[2600,2618],[2900,2920]],"VIC":[[3000,3999],[8000,8999]],"QLD":[[4000,4999],[9000,9999]],"SA":[[5000,5999]],"WA":[[6000,6999]],"TAS":[[7000,7999]],"NT":[[800,999]]};</script>
+
+        <p class="actions">
+            <input type="submit" value="Submit order" class="btn" id="submit-btn">
+            <input type="reset" value="Reset form" class="btn btn-alt" id="reset-btn">
+        </p>
+    </form>
+
+    <h2>What Happens Next?</h2>
+    <p>After you submit the form, we check your details and confirm your order on screen. Our cellar team then packs your
+        wines in protective cartons, and you will receive an email with tracking details once the parcel has been collected
+        by our courier. Most orders arrive within five business days.</p>
+
+    <h2>Your Privacy and Security</h2>
+    <p>Your details are sent securely and used only to process and deliver this order. Passwords are securely hashed before they
+        are stored and are never visible to our staff. Because we sell alcohol, an adult must sign for the delivery and we
+        may ask for photo identification. We never sell or share your personal information with third parties, and you can
+        ask us to update or delete your account at any time.</p>
+    </main>
+
+    <aside class="sidebar" aria-label="Sidebar">
+        <section class="side-box">
+            <h2>Cellar Door</h2>
+            <p class="door-status open">
+                Open now            </p>
+            <p class="small">Wed&ndash;Sun, 10am&ndash;5pm<br>Sydney time: <span class="door-time"></span></p>
+        </section>
+
+        <section class="side-box">
+            <h2>Wine of the Day</h2>
+            <img src="images/red-wine.svg" alt="" width="80" height="160" class="side-img">
+            <p><strong>Merlot 2021</strong><br>$28.00</p>
+            <form action="cart.html" method="post">
+                                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="id" value="merlot-2021">
+                <input type="hidden" name="qty" value="1">
+                <button type="submit" class="btn btn-small">Add to cart</button>
+            </form>
+        </section>
+
+        <section class="side-box">
+            <h2>Free Shipping</h2>
+            <p class="small">On all orders over $150.00. Otherwise a flat $12.00 Australia-wide.</p>
+        </section>
+    </aside>
+</div>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Vinterra Valley Winery &middot; The best drinks in the town</p>
+    <p class="small">Liquor licence: LIQP-0000-SAMPLE (student project). It is against the law to sell or supply alcohol to, or to obtain alcohol on behalf of, a person under the age of 18 years.</p>
+    <p class="small">Please drink responsibly. All images are original artwork created for this site and free to use.</p>
+    <p class="small preview-note">Online preview of a student project. The cart and forms run in your browser only; no orders or details are sent or stored.</p>
+    <p class="small"><a href="sitemap.html">Site Map</a> &middot; <a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>

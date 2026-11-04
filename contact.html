@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Vinterra Valley Winery - cellar door hours, address, phone and enquiry form.">
+    <title>Contact Us | Vinterra Valley Winery</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/products.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/static.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg" alt="Vinterra Valley Winery logo" width="260" height="64">
+            </a>
+            <p class="slogan">The best drinks in the town</p>
+        </div>
+        <a href="cart.html" class="cart-link" aria-label="Shopping cart, 0 items">
+            <img src="images/cart.svg" alt="" width="24" height="24">
+            Cart <span class="cart-count">0</span>
+        </a>
+    </div>
+</header>
+
+<nav class="main-nav" aria-label="Main navigation">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">&#9776; Menu</button>
+    <ul id="nav-list">
+                    <li>
+                <a href="index.html">
+                    Home                </a>
+            </li>
+                    <li>
+                <a href="red-wines.html">
+                    Red Wines                </a>
+            </li>
+                    <li>
+                <a href="white-wines.html">
+                    White Wines                </a>
+            </li>
+                    <li>
+                <a href="accessories.html">
+                    Accessories                </a>
+            </li>
+                    <li>
+                <a href="blog.html">
+                    Blog                </a>
+            </li>
+                    <li>
+                <a href="contact.html" class="active" aria-current="page">
+                    Contact Us                </a>
+            </li>
+                    <li>
+                <a href="sitemap.html">
+                    Site Map                </a>
+            </li>
+                    <li>
+                <a href="cart.html">
+                    Cart                </a>
+            </li>
+            </ul>
+</nav>
+
+<div class="layout">
+    <main id="main" class="main-content">
+        <h1>Contact Us</h1>
+<p>We would love to hear from you. Visit the cellar door for a tasting, call our friendly team, or send an enquiry using the
+    form below and we will reply within one business day. Our team can help with orders, gifts, tastings, events and wholesale supply.</p>
+
+<div class="contact-details">
+    <p><strong>Cellar door:</strong> 120 Vineyard Road, Vinterra Valley NSW 2000 (sample address)</p>
+    <p><strong>Phone:</strong> (02) 5550 1234 &middot; <strong>Email:</strong> hello@vinterra.example</p>
+    <p><strong>Hours:</strong> Wednesday to Sunday, 10am to 5pm</p>
+</div>
+
+
+<form action="contact.html" method="post" class="validate-form" novalidate>
+        <div class="field">
+        <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" value="" required maxlength="50" autocomplete="name"
+               data-pattern="[A-Za-z][A-Za-z' \-]{1,49}" data-msg="Name must be 2-50 letters." aria-describedby="err-name">
+        <span class="error" id="err-name" aria-live="polite"></span>
+    </div>
+    <div class="field">
+        <label for="c-email">Email <span class="req" aria-hidden="true">*</span></label>
+        <input type="email" id="c-email" name="email" value="" required maxlength="60" autocomplete="email"
+               data-pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}" data-msg="Enter a valid email address." aria-describedby="err-c-email">
+        <span class="error" id="err-c-email" aria-live="polite"></span>
+    </div>
+    <div class="field">
+        <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="message" name="message" rows="5" required maxlength="500"
+                  data-pattern="[\s\S]{10,500}" data-msg="Message must be 10-500 characters." aria-describedby="err-message"></textarea>
+        <span class="error" id="err-message" aria-live="polite"></span>
+    </div>
+    <p class="actions">
+        <input type="submit" value="Send message" class="btn">
+        <input type="reset" value="Reset" class="btn btn-alt">
+    </p>
+</form>
+
+<h2>Visiting Us</h2>
+<p>The cellar door is a ninety-minute drive from the city. Follow the highway north, take the Vinterra Valley exit and look
+    for our signs after the old stone bridge. Regional buses stop at the town centre, a short taxi ride away.</p>
+<p>Bookings are not needed for standard tastings, but groups of eight or more should call ahead. Our cellar door offers
+    free parking, wheelchair access and a shaded picnic lawn. For wholesale, restaurant and event enquiries, please mention
+    your business name in your message and our sales manager will be in touch.</p>
+<p>Questions about an existing order? Include your order number so we can find it quickly and give you an update on delivery. We also welcome feedback on our wines, website and service, because every comment helps us improve.</p>
+    </main>
+
+    <aside class="sidebar" aria-label="Sidebar">
+        <section class="side-box">
+            <h2>Cellar Door</h2>
+            <p class="door-status open">
+                Open now            </p>
+            <p class="small">Wed&ndash;Sun, 10am&ndash;5pm<br>Sydney time: <span class="door-time"></span></p>
+        </section>
+
+        <section class="side-box">
+            <h2>Wine of the Day</h2>
+            <img src="images/red-wine.svg" alt="" width="80" height="160" class="side-img">
+            <p><strong>Merlot 2021</strong><br>$28.00</p>
+            <form action="cart.html" method="post">
+                                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="id" value="merlot-2021">
+                <input type="hidden" name="qty" value="1">
+                <button type="submit" class="btn btn-small">Add to cart</button>
+            </form>
+        </section>
+
+        <section class="side-box">
+            <h2>Free Shipping</h2>
+            <p class="small">On all orders over $150.00. Otherwise a flat $12.00 Australia-wide.</p>
+        </section>
+    </aside>
+</div>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Vinterra Valley Winery &middot; The best drinks in the town</p>
+    <p class="small">Liquor licence: LIQP-0000-SAMPLE (student project). It is against the law to sell or supply alcohol to, or to obtain alcohol on behalf of, a person under the age of 18 years.</p>
+    <p class="small">Please drink responsibly. All images are original artwork created for this site and free to use.</p>
+    <p class="small preview-note">Online preview of a student project. The cart and forms run in your browser only; no orders or details are sent or stored.</p>
+    <p class="small"><a href="sitemap.html">Site Map</a> &middot; <a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>

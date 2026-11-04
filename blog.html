@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="News, food matching tips and wine storage advice from Vinterra Valley Winery.">
+    <title>Blog | Vinterra Valley Winery</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/products.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/static.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg" alt="Vinterra Valley Winery logo" width="260" height="64">
+            </a>
+            <p class="slogan">The best drinks in the town</p>
+        </div>
+        <a href="cart.html" class="cart-link" aria-label="Shopping cart, 0 items">
+            <img src="images/cart.svg" alt="" width="24" height="24">
+            Cart <span class="cart-count">0</span>
+        </a>
+    </div>
+</header>
+
+<nav class="main-nav" aria-label="Main navigation">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">&#9776; Menu</button>
+    <ul id="nav-list">
+                    <li>
+                <a href="index.html">
+                    Home                </a>
+            </li>
+                    <li>
+                <a href="red-wines.html">
+                    Red Wines                </a>
+            </li>
+                    <li>
+                <a href="white-wines.html">
+                    White Wines                </a>
+            </li>
+                    <li>
+                <a href="accessories.html">
+                    Accessories                </a>
+            </li>
+                    <li>
+                <a href="blog.html" class="active" aria-current="page">
+                    Blog                </a>
+            </li>
+                    <li>
+                <a href="contact.html">
+                    Contact Us                </a>
+            </li>
+                    <li>
+                <a href="sitemap.html">
+                    Site Map                </a>
+            </li>
+                    <li>
+                <a href="cart.html">
+                    Cart                </a>
+            </li>
+            </ul>
+</nav>
+
+<div class="layout">
+    <main id="main" class="main-content">
+        <h1>From the Vineyard</h1>
+<p>News from the vineyard, food matching ideas and practical advice from our winemaking team.</p>
+
+    <article class="blog-post">
+        <h2>Vintage 2026: A Season of Patience</h2>
+        <p class="meta"><time datetime="2026-10-12">12 October 2026</time></p>
+        <p>A cool spring and a long, mild summer gave our grapes extra weeks on the vine this year. Slow ripening builds flavour without pushing sugar too high, so the 2026 reds are shaping up to be elegant and perfumed. Our winemaker describes the Shiraz in barrel as the most balanced she has seen in a decade. The first wines will be released next spring.</p>
+    </article>
+    <article class="blog-post">
+        <h2>Matching Wine with Summer Food</h2>
+        <p class="meta"><time datetime="2026-09-28">28 September 2026</time></p>
+        <p>Light whites love fresh seafood. Try our Sauvignon Blanc with prawns or a zesty salad, and the Dry Riesling with Thai-style dishes. For barbecues, a slightly chilled Pinot Noir works with everything from grilled salmon to lamb skewers, while the Estate Shiraz stands up to a smoky steak. Do not forget a cooler bag to keep whites cold outdoors.</p>
+    </article>
+    <article class="blog-post">
+        <h2>How to Store Wine at Home</h2>
+        <p class="meta"><time datetime="2026-09-03">3 September 2026</time></p>
+        <p>Keep bottles lying on their side, away from sunlight, at a steady 12 to 16 degrees. Avoid the kitchen bench and the top of the fridge, where heat and vibration age wine quickly. Once opened, re-cork the bottle and refrigerate it; most wines stay fresh for three to five days.</p>
+    </article>
+    </main>
+
+    <aside class="sidebar" aria-label="Sidebar">
+        <section class="side-box">
+            <h2>Cellar Door</h2>
+            <p class="door-status open">
+                Open now            </p>
+            <p class="small">Wed&ndash;Sun, 10am&ndash;5pm<br>Sydney time: <span class="door-time"></span></p>
+        </section>
+
+        <section class="side-box">
+            <h2>Wine of the Day</h2>
+            <img src="images/red-wine.svg" alt="" width="80" height="160" class="side-img">
+            <p><strong>Merlot 2021</strong><br>$28.00</p>
+            <form action="cart.html" method="post">
+                                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="id" value="merlot-2021">
+                <input type="hidden" name="qty" value="1">
+                <button type="submit" class="btn btn-small">Add to cart</button>
+            </form>
+        </section>
+
+        <section class="side-box">
+            <h2>Free Shipping</h2>
+            <p class="small">On all orders over $150.00. Otherwise a flat $12.00 Australia-wide.</p>
+        </section>
+    </aside>
+</div>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Vinterra Valley Winery &middot; The best drinks in the town</p>
+    <p class="small">Liquor licence: LIQP-0000-SAMPLE (student project). It is against the law to sell or supply alcohol to, or to obtain alcohol on behalf of, a person under the age of 18 years.</p>
+    <p class="small">Please drink responsibly. All images are original artwork created for this site and free to use.</p>
+    <p class="small preview-note">Online preview of a student project. The cart and forms run in your browser only; no orders or details are sent or stored.</p>
+    <p class="small"><a href="sitemap.html">Site Map</a> &middot; <a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review the wines and accessories in your shopping cart.">
+    <title>Your Cart | Vinterra Valley Winery</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/products.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/static.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg" alt="Vinterra Valley Winery logo" width="260" height="64">
+            </a>
+            <p class="slogan">The best drinks in the town</p>
+        </div>
+        <a href="cart.html" class="cart-link" aria-label="Shopping cart, 1 items">
+            <img src="images/cart.svg" alt="" width="24" height="24">
+            Cart <span class="cart-count">1</span>
+        </a>
+    </div>
+</header>
+
+<nav class="main-nav" aria-label="Main navigation">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">&#9776; Menu</button>
+    <ul id="nav-list">
+                    <li>
+                <a href="index.html">
+                    Home                </a>
+            </li>
+                    <li>
+                <a href="red-wines.html">
+                    Red Wines                </a>
+            </li>
+                    <li>
+                <a href="white-wines.html">
+                    White Wines                </a>
+            </li>
+                    <li>
+                <a href="accessories.html">
+                    Accessories                </a>
+            </li>
+                    <li>
+                <a href="blog.html">
+                    Blog                </a>
+            </li>
+                    <li>
+                <a href="contact.html">
+                    Contact Us                </a>
+            </li>
+                    <li>
+                <a href="sitemap.html">
+                    Site Map                </a>
+            </li>
+                    <li>
+                <a href="cart.html" class="active" aria-current="page">
+                    Cart                </a>
+            </li>
+            </ul>
+</nav>
+
+<div class="layout">
+    <main id="main" class="main-content">
+        <h1>Your Shopping Cart</h1>
+<p>This page lists every wine and accessory you have chosen. Change a quantity and select <em>Update cart</em> to recalculate
+    your totals, or remove an item you no longer want. Prices are in Australian dollars and include GST.</p>
+
+    <p class="notice" id="cart-empty" hidden>Your cart is empty. Browse our <a href="red-wines.html">red wines</a>, <a href="white-wines.html">white wines</a> or <a href="accessories.html">accessories</a> to get started.</p>
+    <form action="cart.html" method="post">
+                <input type="hidden" name="action" value="update">
+        <div class="table-wrap">
+            <table class="cart-table">
+                <caption class="visually-hidden">Items in your cart</caption>
+                <thead><tr><th scope="col">Product</th><th scope="col">Price</th><th scope="col">Qty</th><th scope="col">Subtotal</th></tr></thead>
+                <tbody>
+                                    <tr>
+                        <td>Estate Shiraz 2021</td>
+                        <td>$32.00</td>
+                        <td><label class="visually-hidden" for="q-shiraz-2021">Quantity of Estate Shiraz 2021</label>
+                            <input type="number" id="q-shiraz-2021" name="qty[shiraz-2021]" value="1" min="0" max="48"></td>
+                        <td>$32.00</td>
+                    </tr>
+                                </tbody>
+                <tfoot>
+                    <tr><th scope="row" colspan="3">Subtotal</th><td>$32.00</td></tr>
+                    <tr><th scope="row" colspan="3">Shipping</th><td>$12.00</td></tr>
+                    <tr class="total"><th scope="row" colspan="3">Total (incl. $4.00 GST)</th><td>$44.00</td></tr>
+                </tfoot>
+            </table>
+        </div>
+        <p class="actions">
+            <button type="submit" class="btn btn-alt">Update cart</button>
+            <a href="checkout.html" class="btn">Proceed to checkout</a>
+        </p>
+    </form>
+    <form action="cart.html" method="post" class="inline-form">
+                <input type="hidden" name="action" value="clear">
+        <button type="submit" class="btn btn-link">Empty cart</button>
+    </form>
+
+<h2>Delivery and Returns</h2>
+<p>We deliver to every state and territory, including regional areas. You will receive a tracking link by email as soon as
+    your parcel leaves the winery. Metropolitan orders usually arrive within three to five business days, and regional orders within seven.</p>
+<p>Orders are packed in protective, recyclable cartons and dispatched within two business days. Delivery is a flat
+    $12.00 anywhere in Australia, and free when your order is over $150.00.
+    Someone aged 18 or over must sign for the parcel, so please choose an address where an adult will be available.</p>
+<p>If a bottle arrives damaged or a wine is faulty, contact us within fourteen days and we will replace it or refund you
+    in full. Accessories are covered by a twelve-month warranty against manufacturing defects.</p>
+    </main>
+
+    <aside class="sidebar" aria-label="Sidebar">
+        <section class="side-box">
+            <h2>Cellar Door</h2>
+            <p class="door-status open">
+                Open now            </p>
+            <p class="small">Wed&ndash;Sun, 10am&ndash;5pm<br>Sydney time: <span class="door-time"></span></p>
+        </section>
+
+        <section class="side-box">
+            <h2>Wine of the Day</h2>
+            <img src="images/red-wine.svg" alt="" width="80" height="160" class="side-img">
+            <p><strong>Merlot 2021</strong><br>$28.00</p>
+            <form action="cart.html" method="post">
+                                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="id" value="merlot-2021">
+                <input type="hidden" name="qty" value="1">
+                <button type="submit" class="btn btn-small">Add to cart</button>
+            </form>
+        </section>
+
+        <section class="side-box">
+            <h2>Free Shipping</h2>
+            <p class="small">On all orders over $150.00. Otherwise a flat $12.00 Australia-wide.</p>
+        </section>
+    </aside>
+</div>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Vinterra Valley Winery &middot; The best drinks in the town</p>
+    <p class="small">Liquor licence: LIQP-0000-SAMPLE (student project). It is against the law to sell or supply alcohol to, or to obtain alcohol on behalf of, a person under the age of 18 years.</p>
+    <p class="small">Please drink responsibly. All images are original artwork created for this site and free to use.</p>
+    <p class="small preview-note">Online preview of a student project. The cart and forms run in your browser only; no orders or details are sent or stored.</p>
+    <p class="small"><a href="sitemap.html">Site Map</a> &middot; <a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>
